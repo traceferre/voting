@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"  href ="/webjars/purecss/1.0.0/build/pure-min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Simple Voting</title>
+</head>
+<body>
+	<h3>Chose a name:</h3>
+	<form method="post" action="/user">
+	<select name="name">
+		<option value="Luka">Luka</option>
+		<option value="Jon P">Jon P</option>
+		<option value="Dan">Dan</option>
+		<option value="Serena">Serena</option>
+	</select>
+	<button name="submit" value="submit">Choose</button>
+	</form>
+	<form method="post" action="/vote">
+	<table>
+		<thead>
+			<tr>
+				<th>Project Name:</th>
+				<th>1st Choice</th>
+				<th>2nd Choice</th>
+				<th>3rd Choice</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cool project idea</td>
+				<td><input type="radio" name="firstChoice" value="project1"></td>
+				<td><input type="radio" name="secondChoice" value="project1"></td>
+				<td><input type="radio" name="thirdChoice" value="project1"></td>
+			</tr>
+			<tr>
+				<td>Another cool project idea</td>
+				<td><input type="radio" name="firstChoice" value="project2"></td>
+				<td><input type="radio" name="secondChoice" value="project2"></td>
+				<td><input type="radio" name="thirdChoice" value="project2"></td>
+			</tr>
+			<tr>
+				<td>A third project idea</td>
+				<td><input type="radio" name="firstChoice" value="project3"></td>
+				<td><input type="radio" name="secondChoice" value="project3"></td>
+				<td><input type="radio" name="thirdChoice" value="project3"></td>
+			</tr>
+		</tbody>
+	</table>
+	<button name="submit" value="submit">Submit</button>
+	</form>
+</body>
+</html>
