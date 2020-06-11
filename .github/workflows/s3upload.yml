@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: traceferre@master
+    - uses: traceferre/voting@master
       with:
         args: --acl private --follow-symlinks --delete --exclude '.git/*'
       env:
